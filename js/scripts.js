@@ -2,6 +2,7 @@
 function burgerMenu() {
   const burger = document.querySelector('.burger')
   const menu = document.querySelector('.menu')
+  const menuItem = document.querySelectorAll('.menu__item-link')
   const body = document.querySelector('body')
   burger.addEventListener('click', () => {
     if (!menu.classList.contains('active')) {
@@ -13,6 +14,15 @@ function burgerMenu() {
       burger.classList.remove('active-burger')
       body.classList.remove('locked')
     }
+  })
+  menuItem.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      menuItem.forEach(item => item.classList.remove('active'))
+      e.target.classList.add('active')
+      menu.classList.remove('active')
+      burger.classList.remove('active-burger')
+      body.classList.remove('locked')
+    })
   })
   window.addEventListener('resize', () => {
     if (window.innerWidth > 991.98) {
@@ -90,4 +100,4 @@ function accordion() {
     })
   })
 }
-accordion() 
+accordion()
