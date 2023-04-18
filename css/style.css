@@ -21,14 +21,14 @@
 
 @font-face {
   font-family: "Gotham";
-  src: url("../fonts/Gotham-Medium.ttf") format("truetype");
+  src: url("../fonts/GothamMedium.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Gotham";
-  src: url("../fonts/Gotham-Bold.ttf") format("truetype");
+  src: url("../fonts/GothamBold.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
 }
@@ -178,7 +178,7 @@ main .main__img {
   font-family: "Gotham", sans-serif;
   font-weight: 700;
   font-size: 37px;
-  line-height: 130%;
+  line-height: 51px;
   text-transform: uppercase;
   color: #FF404E;
   margin-bottom: 20px;
@@ -905,6 +905,7 @@ footer {
 
   .title {
     font-size: 32px;
+    line-height: 42px;
     margin-bottom: 10px;
   }
 
@@ -1286,6 +1287,7 @@ footer {
 
   .title {
     font-size: 25px;
+    line-height: 32px;
   }
 
   .menu__links>* {
